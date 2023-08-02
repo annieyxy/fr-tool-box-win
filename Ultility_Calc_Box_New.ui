@@ -24,7 +24,7 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>5</y>
+      <y>0</y>
       <width>910</width>
       <height>650</height>
      </rect>
@@ -42,7 +42,7 @@
      <locale language="English" country="UnitedStates"/>
     </property>
     <property name="currentIndex">
-     <number>5</number>
+     <number>6</number>
     </property>
     <widget class="QWidget" name="tab_unitconv">
      <property name="font">
@@ -73,7 +73,7 @@
        </font>
       </property>
       <property name="currentIndex">
-       <number>5</number>
+       <number>0</number>
       </property>
       <property name="iconSize">
        <size>
@@ -88,7 +88,7 @@
        <widget class="QWidget" name="gridLayoutWidget">
         <property name="geometry">
          <rect>
-          <x>240</x>
+          <x>300</x>
           <y>30</y>
           <width>311</width>
           <height>161</height>
@@ -420,7 +420,7 @@
        <widget class="QWidget" name="gridLayoutWidget_2">
         <property name="geometry">
          <rect>
-          <x>240</x>
+          <x>290</x>
           <y>30</y>
           <width>311</width>
           <height>161</height>
@@ -659,8 +659,8 @@
        <widget class="QWidget" name="gridLayoutWidget_3">
         <property name="geometry">
          <rect>
-          <x>270</x>
-          <y>30</y>
+          <x>320</x>
+          <y>20</y>
           <width>251</width>
           <height>81</height>
          </rect>
@@ -786,8 +786,8 @@
        <widget class="QWidget" name="horizontalLayoutWidget">
         <property name="geometry">
          <rect>
-          <x>240</x>
-          <y>130</y>
+          <x>290</x>
+          <y>120</y>
           <width>301</width>
           <height>46</height>
          </rect>
@@ -894,8 +894,8 @@
        <widget class="QWidget" name="gridLayoutWidget_4">
         <property name="geometry">
          <rect>
-          <x>230</x>
-          <y>30</y>
+          <x>300</x>
+          <y>20</y>
           <width>311</width>
           <height>81</height>
          </rect>
@@ -1026,8 +1026,8 @@
        <widget class="QWidget" name="gridLayoutWidget_5">
         <property name="geometry">
          <rect>
-          <x>130</x>
-          <y>30</y>
+          <x>190</x>
+          <y>20</y>
           <width>505</width>
           <height>241</height>
          </rect>
@@ -1485,7 +1485,7 @@
        <widget class="QWidget" name="gridLayoutWidget_6">
         <property name="geometry">
          <rect>
-          <x>240</x>
+          <x>290</x>
           <y>30</y>
           <width>311</width>
           <height>161</height>
@@ -1754,7 +1754,7 @@
        <widget class="QLabel" name="arc_image">
         <property name="geometry">
          <rect>
-          <x>290</x>
+          <x>350</x>
           <y>10</y>
           <width>201</width>
           <height>111</height>
@@ -1773,7 +1773,7 @@
        <widget class="QWidget" name="gridLayoutWidget_7">
         <property name="geometry">
          <rect>
-          <x>90</x>
+          <x>150</x>
           <y>140</y>
           <width>271</width>
           <height>131</height>
@@ -1924,7 +1924,7 @@
        <widget class="QWidget" name="gridLayoutWidget_8">
         <property name="geometry">
          <rect>
-          <x>440</x>
+          <x>500</x>
           <y>140</y>
           <width>271</width>
           <height>128</height>
@@ -2078,7 +2078,7 @@
        <widget class="Line" name="line">
         <property name="geometry">
          <rect>
-          <x>390</x>
+          <x>450</x>
           <y>150</y>
           <width>20</width>
           <height>111</height>
@@ -2096,7 +2096,7 @@
        <widget class="QLabel" name="tri_image">
         <property name="geometry">
          <rect>
-          <x>280</x>
+          <x>350</x>
           <y>20</y>
           <width>231</width>
           <height>91</height>
@@ -2127,7 +2127,7 @@
        <widget class="QWidget" name="gridLayoutWidget_9">
         <property name="geometry">
          <rect>
-          <x>100</x>
+          <x>170</x>
           <y>140</y>
           <width>261</width>
           <height>131</height>
@@ -2286,7 +2286,7 @@
        <widget class="QWidget" name="gridLayoutWidget_10">
         <property name="geometry">
          <rect>
-          <x>440</x>
+          <x>510</x>
           <y>140</y>
           <width>231</width>
           <height>128</height>
@@ -2437,7 +2437,7 @@
        <widget class="Line" name="line_2">
         <property name="geometry">
          <rect>
-          <x>390</x>
+          <x>460</x>
           <y>150</y>
           <width>20</width>
           <height>111</height>
@@ -2455,8 +2455,8 @@
        <widget class="QWidget" name="gridLayoutWidget_11">
         <property name="geometry">
          <rect>
-          <x>290</x>
-          <y>30</y>
+          <x>370</x>
+          <y>20</y>
           <width>191</width>
           <height>81</height>
          </rect>
@@ -2536,8 +2536,8 @@
        <widget class="QWidget" name="gridLayoutWidget_12">
         <property name="geometry">
          <rect>
-          <x>420</x>
-          <y>50</y>
+          <x>480</x>
+          <y>70</y>
           <width>301</width>
           <height>261</height>
          </rect>
@@ -2784,8 +2784,8 @@
        <widget class="QWidget" name="verticalLayoutWidget">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>-10</y>
+          <x>70</x>
+          <y>10</y>
           <width>407</width>
           <height>423</height>
          </rect>
@@ -2844,7 +2844,7 @@
        </font>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <property name="iconSize">
        <size>
@@ -2859,8 +2859,8 @@
        <widget class="QWidget" name="gridLayoutWidget_13">
         <property name="geometry">
          <rect>
-          <x>0</x>
-          <y>49</y>
+          <x>55</x>
+          <y>48</y>
           <width>381</width>
           <height>221</height>
          </rect>
@@ -3418,10 +3418,10 @@
        <widget class="QGraphicsView" name="graphicsView_lin">
         <property name="geometry">
          <rect>
-          <x>385</x>
-          <y>11</y>
-          <width>401</width>
-          <height>341</height>
+          <x>440</x>
+          <y>10</y>
+          <width>451</width>
+          <height>391</height>
          </rect>
         </property>
        </widget>
@@ -3433,7 +3433,7 @@
        <widget class="QLabel" name="label_2">
         <property name="geometry">
          <rect>
-          <x>90</x>
+          <x>140</x>
           <y>20</y>
           <width>281</width>
           <height>161</height>
@@ -3452,7 +3452,7 @@
        <widget class="QPlainTextEdit" name="plainTextEdit">
         <property name="geometry">
          <rect>
-          <x>90</x>
+          <x>140</x>
           <y>190</y>
           <width>281</width>
           <height>121</height>
@@ -3468,7 +3468,7 @@ This may help you consider AEB activation &amp; ACC decel restriction in curve.<
        <widget class="QWidget" name="gridLayoutWidget_14">
         <property name="geometry">
          <rect>
-          <x>400</x>
+          <x>450</x>
           <y>66</y>
           <width>361</width>
           <height>111</height>
@@ -3751,7 +3751,7 @@ This may help you consider AEB activation &amp; ACC decel restriction in curve.<
        <widget class="QWidget" name="gridLayoutWidget_15">
         <property name="geometry">
          <rect>
-          <x>20</x>
+          <x>100</x>
           <y>20</y>
           <width>261</width>
           <height>291</height>
@@ -4003,7 +4003,7 @@ This may help you consider AEB activation &amp; ACC decel restriction in curve.<
        <widget class="QGraphicsView" name="graphicsView_ttc_v">
         <property name="geometry">
          <rect>
-          <x>340</x>
+          <x>420</x>
           <y>10</y>
           <width>451</width>
           <height>281</height>
@@ -4013,7 +4013,7 @@ This may help you consider AEB activation &amp; ACC decel restriction in curve.<
        <widget class="QGraphicsView" name="graphicsView_ttc_s">
         <property name="geometry">
          <rect>
-          <x>340</x>
+          <x>420</x>
           <y>290</y>
           <width>451</width>
           <height>281</height>
@@ -4023,7 +4023,7 @@ This may help you consider AEB activation &amp; ACC decel restriction in curve.<
        <widget class="QLabel" name="label_41">
         <property name="geometry">
          <rect>
-          <x>20</x>
+          <x>100</x>
           <y>320</y>
           <width>271</width>
           <height>21</height>
@@ -4044,7 +4044,7 @@ Host starts out at a distance behind target.</string>
        <widget class="QLabel" name="text_ttc_outcome">
         <property name="geometry">
          <rect>
-          <x>20</x>
+          <x>100</x>
           <y>340</y>
           <width>261</width>
           <height>24</height>
@@ -4068,7 +4068,7 @@ Host starts out at a distance behind target.</string>
        <widget class="QLabel" name="label_30">
         <property name="geometry">
          <rect>
-          <x>60</x>
+          <x>110</x>
           <y>20</y>
           <width>411</width>
           <height>231</height>
@@ -4087,7 +4087,7 @@ Host starts out at a distance behind target.</string>
        <widget class="QLabel" name="label_31">
         <property name="geometry">
          <rect>
-          <x>60</x>
+          <x>110</x>
           <y>260</y>
           <width>411</width>
           <height>41</height>
@@ -4106,7 +4106,7 @@ Host starts out at a distance behind target.</string>
        <widget class="QWidget" name="gridLayoutWidget_16">
         <property name="geometry">
          <rect>
-          <x>520</x>
+          <x>570</x>
           <y>20</y>
           <width>221</width>
           <height>291</height>
@@ -4397,7 +4397,7 @@ Host starts out at a distance behind target.</string>
        <widget class="QLabel" name="label_48">
         <property name="geometry">
          <rect>
-          <x>320</x>
+          <x>370</x>
           <y>300</y>
           <width>151</width>
           <height>26</height>
@@ -4431,7 +4431,7 @@ Host starts out at a distance behind target.</string>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_15">
        <attribute name="title">
@@ -4440,8 +4440,8 @@ Host starts out at a distance behind target.</string>
        <widget class="QWidget" name="gridLayoutWidget_17">
         <property name="geometry">
          <rect>
-          <x>260</x>
-          <y>30</y>
+          <x>330</x>
+          <y>20</y>
           <width>261</width>
           <height>131</height>
          </rect>
@@ -4616,8 +4616,8 @@ Host starts out at a distance behind target.</string>
        <widget class="QWidget" name="gridLayoutWidget_18">
         <property name="geometry">
          <rect>
-          <x>260</x>
-          <y>220</y>
+          <x>330</x>
+          <y>210</y>
           <width>261</width>
           <height>91</height>
          </rect>
@@ -4733,8 +4733,8 @@ Host starts out at a distance behind target.</string>
        <widget class="QLabel" name="label_49">
         <property name="geometry">
          <rect>
-          <x>260</x>
-          <y>160</y>
+          <x>330</x>
+          <y>150</y>
           <width>261</width>
           <height>51</height>
          </rect>
@@ -4760,7 +4760,7 @@ tracking before being identified as an object:</string>
        <widget class="QWidget" name="gridLayoutWidget_19">
         <property name="geometry">
          <rect>
-          <x>220</x>
+          <x>310</x>
           <y>30</y>
           <width>301</width>
           <height>171</height>
@@ -8110,8 +8110,8 @@ Reduction
        <rect>
         <x>250</x>
         <y>10</y>
-        <width>441</width>
-        <height>211</height>
+        <width>421</width>
+        <height>191</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout_32">
@@ -8404,10 +8404,10 @@ Reduction
      <widget class="QGraphicsView" name="graphicsView_esa">
       <property name="geometry">
        <rect>
-        <x>230</x>
-        <y>260</y>
-        <width>491</width>
-        <height>311</height>
+        <x>210</x>
+        <y>230</y>
+        <width>531</width>
+        <height>341</height>
        </rect>
       </property>
      </widget>
@@ -8415,7 +8415,7 @@ Reduction
       <property name="geometry">
        <rect>
         <x>430</x>
-        <y>230</y>
+        <y>200</y>
         <width>100</width>
         <height>32</height>
        </rect>
@@ -8429,7 +8429,7 @@ Reduction
        <rect>
         <x>10</x>
         <y>440</y>
-        <width>221</width>
+        <width>191</width>
         <height>131</height>
        </rect>
       </property>
@@ -8531,7 +8531,7 @@ Reduction
        </rect>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>4</number>
       </property>
       <widget class="QWidget" name="tab_30">
        <attribute name="title">
@@ -8540,10 +8540,10 @@ Reduction
        <widget class="QWidget" name="gridLayoutWidget_30">
         <property name="geometry">
          <rect>
-          <x>320</x>
-          <y>40</y>
-          <width>294</width>
-          <height>206</height>
+          <x>300</x>
+          <y>35</y>
+          <width>321</width>
+          <height>211</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout_30">
@@ -9084,7 +9084,7 @@ Reduction
            </item>
            <item>
             <property name="text">
-             <string>dBSm</string>
+             <string>dBsm</string>
             </property>
            </item>
           </widget>
@@ -9121,7 +9121,7 @@ Reduction
           <x>450</x>
           <y>60</y>
           <width>271</width>
-          <height>221</height>
+          <height>238</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout_34">
@@ -9483,7 +9483,7 @@ Reduction
       </widget>
       <widget class="QWidget" name="tab_33">
        <attribute name="title">
-        <string>Doppler Detection to Abs</string>
+        <string>Doppler Detection to Abs Dynamics</string>
        </attribute>
        <widget class="QWidget" name="gridLayoutWidget_35">
         <property name="geometry">
@@ -9771,7 +9771,7 @@ Reduction
           <x>430</x>
           <y>40</y>
           <width>321</width>
-          <height>251</height>
+          <height>241</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout_36">
@@ -9798,6 +9798,31 @@ Reduction
            </item>
           </widget>
          </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="input_radareq_pt">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: lightyellow;</string>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="dragEnabled">
+            <bool>true</bool>
+           </property>
+           <property name="placeholderText">
+            <string>Input</string>
+           </property>
+          </widget>
+         </item>
          <item row="6" column="0">
           <widget class="QLabel" name="label_199">
            <property name="font">
@@ -9811,16 +9836,10 @@ Reduction
            </property>
           </widget>
          </item>
-         <item row="5" column="0">
-          <widget class="QLabel" name="label_198">
-           <property name="font">
-            <font>
-             <pointsize>12</pointsize>
-             <bold>false</bold>
-            </font>
-           </property>
+         <item row="7" column="1">
+          <widget class="QLabel" name="label_195">
            <property name="text">
-            <string>Distance to Target</string>
+            <string> λ</string>
            </property>
           </widget>
          </item>
@@ -9837,6 +9856,153 @@ Reduction
            </property>
           </widget>
          </item>
+         <item row="0" column="2">
+          <widget class="QLineEdit" name="input_radareq_pr">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: lightyellow;</string>
+           </property>
+           <property name="text">
+            <string>-116.8</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="dragEnabled">
+            <bool>true</bool>
+           </property>
+           <property name="placeholderText">
+            <string>Input</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QLabel" name="label_205">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>F</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="QLineEdit" name="input_radareq_rcs">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="dragEnabled">
+            <bool>true</bool>
+           </property>
+           <property name="placeholderText">
+            <string>Input</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="label_201">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Gt</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLineEdit" name="input_radareq_gt">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: lightyellow;</string>
+           </property>
+           <property name="text">
+            <string>31.2</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="dragEnabled">
+            <bool>true</bool>
+           </property>
+           <property name="placeholderText">
+            <string>Input</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLabel" name="label_202">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Gr</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QComboBox" name="comboBox_radareq_pt">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <item>
+            <property name="text">
+             <string>dBm</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>mW</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="6" column="2">
+          <widget class="QLineEdit" name="input_radareq_fr">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="dragEnabled">
+            <bool>true</bool>
+           </property>
+           <property name="placeholderText">
+            <string>Input</string>
+           </property>
+          </widget>
+         </item>
          <item row="3" column="0">
           <widget class="QLabel" name="label_190">
            <property name="font">
@@ -9847,6 +10013,32 @@ Reduction
            </property>
            <property name="text">
             <string>Receive Antenna Gain</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="3">
+          <widget class="QLabel" name="label_211">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>mm</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="QLabel" name="label_206">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>dB</string>
            </property>
           </widget>
          </item>
@@ -9863,6 +10055,70 @@ Reduction
            </property>
           </widget>
          </item>
+         <item row="4" column="1">
+          <widget class="QLabel" name="label_203">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>r</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QLineEdit" name="input_radareq_gr">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: lightyellow;</string>
+           </property>
+           <property name="text">
+            <string>13.3</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="dragEnabled">
+            <bool>true</bool>
+           </property>
+           <property name="placeholderText">
+            <string>Input</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="3">
+          <widget class="QLabel" name="label_210">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>GHz</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="3">
+          <widget class="QLabel" name="label_208">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>dBsm</string>
+           </property>
+          </widget>
+         </item>
          <item row="0" column="1">
           <widget class="QLabel" name="label_196">
            <property name="font">
@@ -9873,6 +10129,19 @@ Reduction
            </property>
            <property name="text">
             <string>Pr</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QLabel" name="label_200">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Wavelength</string>
            </property>
           </widget>
          </item>
@@ -9902,123 +10171,6 @@ Reduction
            </property>
           </widget>
          </item>
-         <item row="1" column="1">
-          <widget class="QLabel" name="label_197">
-           <property name="font">
-            <font>
-             <pointsize>12</pointsize>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>Pt</string>
-           </property>
-          </widget>
-         </item>
-         <item row="7" column="0">
-          <widget class="QLabel" name="label_200">
-           <property name="font">
-            <font>
-             <pointsize>12</pointsize>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>Wavelength</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="1">
-          <widget class="QLabel" name="label_201">
-           <property name="font">
-            <font>
-             <pointsize>12</pointsize>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>Gt</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="1">
-          <widget class="QLabel" name="label_202">
-           <property name="font">
-            <font>
-             <pointsize>12</pointsize>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>Gr</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="1">
-          <widget class="QLabel" name="label_203">
-           <property name="font">
-            <font>
-             <pointsize>12</pointsize>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>r</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="1">
-          <widget class="QLabel" name="label_204">
-           <property name="font">
-            <font>
-             <pointsize>12</pointsize>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>R</string>
-           </property>
-          </widget>
-         </item>
-         <item row="6" column="1">
-          <widget class="QLabel" name="label_205">
-           <property name="font">
-            <font>
-             <pointsize>12</pointsize>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>F</string>
-           </property>
-          </widget>
-         </item>
-         <item row="7" column="1">
-          <widget class="QLabel" name="label_195">
-           <property name="text">
-            <string> λ</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="2">
-          <widget class="QLabel" name="output_radareq_rtarget">
-           <property name="font">
-            <font>
-             <pointsize>12</pointsize>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QLabel{background-color: rgb(145, 216, 255)}</string>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-           </property>
-          </widget>
-         </item>
          <item row="7" column="2">
           <widget class="QLabel" name="output_radareq_wl">
            <property name="font">
@@ -10038,77 +10190,6 @@ Reduction
            </property>
           </widget>
          </item>
-         <item row="6" column="2">
-          <widget class="QLineEdit" name="input_radareq_fr">
-           <property name="font">
-            <font>
-             <pointsize>12</pointsize>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-           </property>
-           <property name="dragEnabled">
-            <bool>true</bool>
-           </property>
-           <property name="placeholderText">
-            <string>Input</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="2">
-          <widget class="QLineEdit" name="input_radareq_rcs">
-           <property name="font">
-            <font>
-             <pointsize>12</pointsize>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-           </property>
-           <property name="dragEnabled">
-            <bool>true</bool>
-           </property>
-           <property name="placeholderText">
-            <string>Input</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="3">
-          <widget class="QComboBox" name="comboBox_radareq_pt">
-           <property name="font">
-            <font>
-             <pointsize>12</pointsize>
-             <bold>false</bold>
-            </font>
-           </property>
-           <item>
-            <property name="text">
-             <string>dBm</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>mW</string>
-            </property>
-           </item>
-          </widget>
-         </item>
-         <item row="3" column="3">
-          <widget class="QLabel" name="label_206">
-           <property name="font">
-            <font>
-             <pointsize>12</pointsize>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>dB</string>
-           </property>
-          </widget>
-         </item>
          <item row="2" column="3">
           <widget class="QLabel" name="label_207">
            <property name="font">
@@ -10122,8 +10203,8 @@ Reduction
            </property>
           </widget>
          </item>
-         <item row="4" column="3">
-          <widget class="QLabel" name="label_208">
+         <item row="1" column="1">
+          <widget class="QLabel" name="label_197">
            <property name="font">
             <font>
              <pointsize>12</pointsize>
@@ -10131,11 +10212,56 @@ Reduction
             </font>
            </property>
            <property name="text">
-            <string>dBsm</string>
+            <string>Pt</string>
            </property>
           </widget>
          </item>
-         <item row="5" column="3">
+         <item row="8" column="0">
+          <widget class="QLabel" name="label_198">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Distance to Target</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="QLabel" name="label_204">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>R</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="2">
+          <widget class="QLabel" name="output_radareq_rtarget">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{background-color: rgb(145, 216, 255)}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="3">
           <widget class="QLabel" name="label_209">
            <property name="font">
             <font>
@@ -10145,132 +10271,6 @@ Reduction
            </property>
            <property name="text">
             <string>m</string>
-           </property>
-          </widget>
-         </item>
-         <item row="6" column="3">
-          <widget class="QLabel" name="label_210">
-           <property name="font">
-            <font>
-             <pointsize>12</pointsize>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>GHz</string>
-           </property>
-          </widget>
-         </item>
-         <item row="7" column="3">
-          <widget class="QLabel" name="label_211">
-           <property name="font">
-            <font>
-             <pointsize>12</pointsize>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>mm</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="2">
-          <widget class="QLineEdit" name="input_radareq_pr">
-           <property name="font">
-            <font>
-             <pointsize>12</pointsize>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: lightyellow;</string>
-           </property>
-           <property name="text">
-            <string>-116.8</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-           </property>
-           <property name="dragEnabled">
-            <bool>true</bool>
-           </property>
-           <property name="placeholderText">
-            <string>Input</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="2">
-          <widget class="QLineEdit" name="input_radareq_pt">
-           <property name="font">
-            <font>
-             <pointsize>12</pointsize>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: lightyellow;</string>
-           </property>
-           <property name="text">
-            <string>0</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-           </property>
-           <property name="dragEnabled">
-            <bool>true</bool>
-           </property>
-           <property name="placeholderText">
-            <string>Input</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="2">
-          <widget class="QLineEdit" name="input_radareq_gt">
-           <property name="font">
-            <font>
-             <pointsize>12</pointsize>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: lightyellow;</string>
-           </property>
-           <property name="text">
-            <string>31.2</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-           </property>
-           <property name="dragEnabled">
-            <bool>true</bool>
-           </property>
-           <property name="placeholderText">
-            <string>Input</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="2">
-          <widget class="QLineEdit" name="input_radareq_gr">
-           <property name="font">
-            <font>
-             <pointsize>12</pointsize>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: lightyellow;</string>
-           </property>
-           <property name="text">
-            <string>13.3</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-           </property>
-           <property name="dragEnabled">
-            <bool>true</bool>
-           </property>
-           <property name="placeholderText">
-            <string>Input</string>
            </property>
           </widget>
          </item>

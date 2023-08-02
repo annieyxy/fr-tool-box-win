@@ -12,6 +12,8 @@ from basic_math import *
 from basic_motion import *
 from acc import *
 from aeb import *
+from esa import *
+from radar import *
 import pyqtgraph as pg
 
 r2d = 1 / np.pi * 180
@@ -164,14 +166,54 @@ class Window(QMainWindow, Ui_Ultiliy_Calc_Box):
         self.plot_aeb2.pressed.connect(lambda:update_plot_aeb(self))
         # -------------------------------------------------------------------------------------------------------------#
         # ESA slot
-        self.input_esa_v.editingFinished.connect(self.esa)
-        self.input_esa_ttc_min.editingFinished.connect(self.esa)
-        self.input_esa_ttc_max.editingFinished.connect(self.esa)
+        self.input_esa_v.editingFinished.connect(lambda: esa(self))
+        self.input_esa_ttc_min.editingFinished.connect(lambda: esa(self))
+        self.input_esa_ttc_max.editingFinished.connect(lambda: esa(self))
         self.plot_esa.pressed.connect(lambda:update_plot_esa(self))
         self.checkBox_esa_yaw.stateChanged.connect(lambda state:update_plot_esa_yaw(self,state))
         self.checkBox_esa_yaw_rate.stateChanged.connect(lambda state:update_plot_esa_yaw_rate(self,state))
         self.checkBox_esa_lat_offset.stateChanged.connect(lambda state:update_plot_esa_lat_offset(self,state))
         self.checkBox_esa_lat_accel.stateChanged.connect(lambda state:update_plot_esa_lat_accel(self,state))
+        # -------------------------------------------------------------------------------------------------------------#
+        # Radar slot
+        self.input_dsf_v1.editingFinished.connect(lambda:doppler_freq(self))
+        self.input_dsf_v2.editingFinished.connect(lambda:doppler_freq(self))
+        self.input_dsf_base_fr.editingFinished.connect(lambda:doppler_freq(self))
+        self.comboBox_dsf_v1.currentTextChanged.connect(lambda:doppler_freq(self))
+        self.comboBox_dsf_v2.currentTextChanged.connect(lambda:doppler_freq(self))
+        self.comboBox_dsf_base_fr.currentTextChanged.connect(lambda:doppler_freq(self))
+        self.comboBox_dsf_rx_fr.currentTextChanged.connect(lambda:doppler_freq(self))
+        self.comboBox_dsf_dsf.currentTextChanged.connect(lambda:doppler_freq(self))
+        self.input_rcs_l.editingFinished.connect(lambda:rcs(self))
+        self.input_rcs_fr.editingFinished.connect(lambda:rcs(self))
+        self.comboBox_rcs_fr.currentTextChanged.connect(lambda:rcs(self))
+        self.comboBox_rcs_wl.currentTextChanged.connect(lambda:rcs(self))
+        self.comboBox_rcs_rcs.currentTextChanged.connect(lambda:rcs(self))
+        self.input_dds_v1.editingFinished.connect(lambda:dds(self))
+        self.input_dds_v2.editingFinished.connect(lambda:dds(self))
+        self.input_dds_x.editingFinished.connect(lambda:dds(self))
+        self.input_dds_y.editingFinished.connect(lambda:dds(self))
+        self.comboBox_dds_v1.currentTextChanged.connect(lambda:dds(self))
+        self.comboBox_dds_v2.currentTextChanged.connect(lambda:dds(self))
+        self.comboBox_dds_vr.currentTextChanged.connect(lambda:dds(self))
+        self.comboBox_dds_azimuth.currentTextChanged.connect(lambda:dds(self))
+        self.comboBox_dds_vdopp.currentTextChanged.connect(lambda:dds(self))
+        self.input_dda_dir.editingFinished.connect(lambda:dda(self))
+        self.input_dda_vdetected.editingFinished.connect(lambda:dda(self))
+        self.input_dda_vego.editingFinished.connect(lambda:dda(self))
+        self.comboBox_dda_dir.currentTextChanged.connect(lambda:dda(self))
+        self.comboBox_dda_vdetected.currentTextChanged.connect(lambda:dda(self))
+        self.comboBox_dda_vego.currentTextChanged.connect(lambda:dda(self))
+        self.comboBox_dda_vx.currentTextChanged.connect(lambda:dda(self))
+        self.comboBox_dda_vy.currentTextChanged.connect(lambda:dda(self))
+        self.input_radareq_pr.editingFinished.connect(lambda:radareq(self))
+        self.input_radareq_pt.editingFinished.connect(lambda:radareq(self))
+        self.input_radareq_gt.editingFinished.connect(lambda:radareq(self))
+        self.input_radareq_gr.editingFinished.connect(lambda:radareq(self))
+        self.input_radareq_rcs.editingFinished.connect(lambda:radareq(self))
+        self.input_radareq_fr.editingFinished.connect(lambda:radareq(self))
+        self.comboBox_radareq_pr.currentTextChanged.connect(lambda:radareq(self))
+        self.comboBox_radareq_pt.currentTextChanged.connect(lambda:radareq(self))
 
 
 
