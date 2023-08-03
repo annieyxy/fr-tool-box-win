@@ -118,10 +118,12 @@ def freq_unitconv(self):
         freq_input = float(temp)
         if freq_input > 0:
             if item == "GHz":
+                freq_hz=freq_input * 1e9
                 freq_s = 1 / (freq_input * 1e9)
                 freq_ms = freq_s * 1e3
                 freq_us = freq_ms * 1e3
                 freq_ns = freq_us * 1e3
+                self.label_freq_hz.setText(str('%.3e' % freq_hz))
                 self.label_freq_s.setText(str('%.3e' % freq_s))
                 self.label_freq_ms.setText(str('%.3e' % freq_ms))
                 self.label_freq_us.setText(str('%.3e' % freq_us))
@@ -131,10 +133,12 @@ def freq_unitconv(self):
                 self.label_freqlambda_m.setText(str('%.3e' % freqlambda_m))
                 self.label_freqlambda_mm.setText(str('%.3e' % freqlambda_mm))
             elif item == 'MHz':
+                freq_hz=freq_input * 1e6
                 freq_s = 1 / (freq_input * 1e6)
                 freq_ms = freq_s * 1e3
                 freq_us = freq_ms * 1e3
                 freq_ns = freq_us * 1e3
+                self.label_freq_hz.setText(str('%.3e' % freq_hz))
                 self.label_freq_s.setText(str('%.3e' % freq_s))
                 self.label_freq_ms.setText(str('%.3e' % freq_ms))
                 self.label_freq_us.setText(str('%.3e' % freq_us))
@@ -144,10 +148,12 @@ def freq_unitconv(self):
                 self.label_freqlambda_m.setText(str('%.3e' % freqlambda_m))
                 self.label_freqlambda_mm.setText(str('%.3e' % freqlambda_mm))
             else:
+                freq_hz=freq_input * 1e3
                 freq_s = 1 / (freq_input * 1e3)
                 freq_ms = freq_s * 1e3
                 freq_us = freq_ms * 1e3
                 freq_ns = freq_us * 1e3
+                self.label_freq_hz.setText(str('%.3e' % freq_hz))
                 self.label_freq_s.setText(str('%.3e' % freq_s))
                 self.label_freq_ms.setText(str('%.3e' % freq_ms))
                 self.label_freq_us.setText(str('%.3e' % freq_us))
@@ -157,6 +163,7 @@ def freq_unitconv(self):
                 self.label_freqlambda_m.setText(str('%.3e' % freqlambda_m))
                 self.label_freqlambda_mm.setText(str('%.3e' % freqlambda_mm))
         elif freq_input == 0:
+            self.label_freq_hz.setText('0')
             self.label_freq_s.setText('inf ')
             self.label_freq_ms.setText('inf ')
             self.label_freq_us.setText('inf ')
@@ -164,6 +171,7 @@ def freq_unitconv(self):
             self.label_freqlambda_m.setText('inf ')
             self.label_freqlambda_mm.setText('inf ')
         else:
+            self.label_freq_hz.setText('Invalid input')
             self.label_freq_s.setText('Invalid input')
             self.label_freq_ms.setText('Invalid input')
             self.label_freq_us.setText('Invalid input')
@@ -171,6 +179,7 @@ def freq_unitconv(self):
             self.label_freqlambda_m.setText('Invalid input')
             self.label_freqlambda_mm.setText('Invalid input')
     else:
+        self.label_freq_hz.setText('Invalid input')
         self.label_freq_s.setText('Invalid input')
         self.label_freq_ms.setText('Invalid input')
         self.label_freq_us.setText('Invalid input')

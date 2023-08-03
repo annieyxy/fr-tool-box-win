@@ -16,7 +16,7 @@ def arc_calc_1(self):
             output_arcLen=input_angle*d2r*input_radius
         else:
             output_arcLen=input_angle*input_radius
-        self.output_arc_len1.setText(str(output_arcLen))
+        self.output_arc_len1.setText(str(round(output_arcLen,3)))
 
 def arc_calc_2(self):
     input_arcLen_temp=self.input_arc_len2.text()
@@ -29,7 +29,7 @@ def arc_calc_2(self):
             output_angle=r2d*input_arcLen/input_radius
         else:
             output_angle=input_arcLen/input_radius
-        self.output_arc_angle2.setText(str(output_angle))
+        self.output_arc_angle2.setText(str(round(output_angle,3)))
 
 
 def tri_calc_1(self):
@@ -37,20 +37,24 @@ def tri_calc_1(self):
     input_side_temp=self.input_tri_side1.text()
     input_unit=self.comboBox_tri_angle_unit1.currentText()
     input_side=self.comboBox_tri_baseorheight.currentText()
+    height_label="Height"
+    base_label="Base"
     if (CF.isnum(input_angle_temp) and CF.isnum(input_side_temp)):
         input_angle=float(input_angle_temp)
         input_side=float(input_side_temp)
         if(input_side=="Base"):
+            self.label_tri_baseorheight.setText(str(height_label))
             if input_unit=="Degree":
                 output_height=input_side*np.tan(input_angle*d2r)
             else:
                 output_height=input_side*np.tan(input_angle)
         else:
+            self.label_tri_baseorheight.setText(str(base_label))
             if input_unit=="Degree":
                 output_height=input_side/np.tan(input_angle*d2r)
             else:
                 output_height=input_side/np.tan(input_angle)
-        self.output_tri_height1.setText(str(output_height))
+        self.output_tri_height1.setText(str(round(output_height,3)))
 
 def tri_calc_2(self):
     input_base_temp=self.input_tri_base2.text()
@@ -63,7 +67,7 @@ def tri_calc_2(self):
             output_angle=r2d*np.arctan(input_height/input_base)
         else:
             output_angle=np.arctan(input_height/input_base)
-        self.output_tri_angle2.setText(str(output_angle))
+        self.output_tri_angle2.setText(str(round(output_angle,3)))
 
 def dist_curve(self):
     input_vx_temp=self.input_curve_vx.text()
@@ -99,7 +103,6 @@ def bit2dec(self):
     input=int(self.input_bitdec_bit.text())
     output=2**input-1
     self.output_bitdec_dec.setText(str(output))
-
 
 
 

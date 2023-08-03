@@ -1,6 +1,6 @@
 from PyQt6.QtWidgets import QMainWindow, QApplication, QFileDialog, QMessageBox, \
     QWidget, QGridLayout, QPushButton, QLabel, QHBoxLayout, QGraphicsScene, QTableView,QHeaderView
-from PyQt6.QtGui import QIcon, QFont,QStandardItemModel,QStandardItem
+from PyQt6.QtGui import QIcon, QFont,QStandardItemModel,QStandardItem,QPixmap
 from PyQt6.QtCore import Qt, QTimer
 import sys
 from output import Ui_Ultiliy_Calc_Box
@@ -15,11 +15,17 @@ from aeb import *
 from esa import *
 from radar import *
 import pyqtgraph as pg
+import os
 
 r2d = 1 / np.pi * 180
 d2r = 1 / 180 * np.pi
 c_speed = 299792458
 g=9.80665
+
+def resource_path(relative_path):
+    # Get absolute path to resource, works for dev and for PyInstaller 
+    base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
+    return os.path.join(base_path, relative_path)
 
 # parent class shall include QManWindow (which is used in QT designer) and Ui_MainWindow_RDT (class in UI.py)
 class Window(QMainWindow, Ui_Ultiliy_Calc_Box):
@@ -214,6 +220,37 @@ class Window(QMainWindow, Ui_Ultiliy_Calc_Box):
         self.input_radareq_fr.editingFinished.connect(lambda:radareq(self))
         self.comboBox_radareq_pr.currentTextChanged.connect(lambda:radareq(self))
         self.comboBox_radareq_pt.currentTextChanged.connect(lambda:radareq(self))
+
+
+
+        self.ttc_timerList=[]
+        self.ttc_speedList_host=[]
+        self.ttc_distList_host=[]
+        self.ttc_speedList_target=[]
+        self.ttc_distList_target=[]
+
+        #---------- Set up image directories for pyinstaller-----------------
+        arc_img_dir=resource_path("image/Arc.png")
+        self.arc_image.setPixmap(QPixmap(arc_img_dir))
+        tri_img_dir=resource_path("image/Triangle.png")
+        self.tri_image.setPixmap(QPixmap(tri_img_dir))
+        label_dir=resource_path("image/Distance_to_curve1.png")
+        self.label.setPixmap(QPixmap(label_dir))
+        label_2_dir=resource_path("image/Centrifugal acceleration.png")
+        self.label_2.setPixmap(QPixmap(label_2_dir))
+        label_30_dir=resource_path("image/Scritial1.PNG")
+        self.label_30.setPixmap(QPixmap(label_30_dir))
+        label_31_dir=resource_path("image/Vsmin.PNG")
+        self.label_31.setPixmap(QPixmap(label_31_dir))
+        label_116_dir=resource_path("image/braking performance.png")
+        self.label_116.setPixmap(QPixmap(label_116_dir))
+        label_168_dir=resource_path("image/corner reflector.png")
+        self.label_168.setPixmap(QPixmap(label_168_dir))
+        label_169_dir=resource_path("image/Doppler section sim.png")
+        self.label_169.setPixmap(QPixmap(label_169_dir))
+        label_212_dir=resource_path("image/Radar Equation.png")
+        self.label_212.setPixmap(QPixmap(label_212_dir))
+
 
 
 
