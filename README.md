@@ -34,7 +34,7 @@ This is a PyQt6 based tool box for basic automotive calculation and graph plotti
 
 * The pyinstaller tool is used for packaging our app. Run `pip install pyinstaller` in Terminal to install this module.
 
-* Run `pyinstaller --add-data 'image;image' -n ‘Tool-Box’ -wF main.py` in Windows
-  or `pyinstaller --add-data 'image:image' -n ‘Tool-Box’ -wF main.py` in Linux to package the app into a single executable.
+* Run `pyinstaller --add-data 'image;image' -n 'Tool-Box' -wF main.py` in Windows
+  or `pyinstaller --add-data 'image:image' -n 'Tool-Box' -wF main.py` in Linux to package the app into a single executable.
 
-* After packaging is done, the executable file can be found in the `dist` folder. 
+* After packaging is done, the executable file ("Tool-Box") can be found in the `dist` folder. 

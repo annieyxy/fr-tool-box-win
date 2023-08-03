@@ -3,7 +3,7 @@ from PyQt6.QtWidgets import QMainWindow, QApplication, QFileDialog, QMessageBox,
 from PyQt6.QtGui import QIcon, QFont,QStandardItemModel,QStandardItem,QPixmap
 from PyQt6.QtCore import Qt, QTimer
 import sys
-from output import Ui_Ultiliy_Calc_Box
+from tool_box_interface import Ui_tool_box_interface
 from common_func import isnum
 import numpy as np
 from graph_func import *
@@ -28,7 +28,7 @@ def resource_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 # parent class shall include QManWindow (which is used in QT designer) and Ui_MainWindow_RDT (class in UI.py)
-class Window(QMainWindow, Ui_Ultiliy_Calc_Box):
+class Window(QMainWindow, Ui_tool_box_interface):
 
     def __init__(self):
         super().__init__() 
