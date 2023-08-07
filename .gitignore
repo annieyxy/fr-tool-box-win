@@ -33,3 +33,6 @@ files_for_autograder_io/
 .ropeproject/
 .vscode/
 .idea
+
+build/
+dist/
