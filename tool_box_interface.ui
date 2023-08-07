@@ -43,7 +43,7 @@
      <locale language="English" country="UnitedStates"/>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="tab_unitconv">
      <property name="font">
@@ -3176,7 +3176,7 @@
          <rect>
           <x>10</x>
           <y>70</y>
-          <width>550</width>
+          <width>531</width>
           <height>289</height>
          </rect>
         </property>
@@ -5427,6 +5427,9 @@ tracking before being identified as an object:</string>
              <bold>false</bold>
             </font>
            </property>
+           <property name="text">
+            <string>3.5</string>
+           </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
@@ -5652,6 +5655,9 @@ tracking before being identified as an object:</string>
              <bold>false</bold>
             </font>
            </property>
+           <property name="text">
+            <string>20</string>
+           </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
@@ -5716,12 +5722,12 @@ tracking before being identified as an object:</string>
            </property>
            <item>
             <property name="text">
-             <string>m/s</string>
+             <string>kph</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>kph</string>
+             <string>m/s</string>
             </property>
            </item>
           </widget>
@@ -5763,6 +5769,9 @@ tracking before being identified as an object:</string>
              <bold>false</bold>
             </font>
            </property>
+           <property name="text">
+            <string>40</string>
+           </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
@@ -5783,6 +5792,9 @@ tracking before being identified as an object:</string>
              <bold>false</bold>
             </font>
            </property>
+           <property name="text">
+            <string>-2.5</string>
+           </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
@@ -5802,6 +5814,9 @@ tracking before being identified as an object:</string>
              <pointsize>10</pointsize>
              <bold>false</bold>
             </font>
+           </property>
+           <property name="text">
+            <string>100</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -5832,12 +5847,12 @@ tracking before being identified as an object:</string>
            </property>
            <item>
             <property name="text">
-             <string>m/s</string>
+             <string>kph</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>kph</string>
+             <string>m/s</string>
             </property>
            </item>
           </widget>
@@ -5865,6 +5880,9 @@ tracking before being identified as an object:</string>
              <bold>false</bold>
             </font>
            </property>
+           <property name="text">
+            <string>100</string>
+           </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
@@ -5885,6 +5903,9 @@ tracking before being identified as an object:</string>
              <bold>false</bold>
             </font>
            </property>
+           <property name="text">
+            <string>3</string>
+           </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
@@ -5904,6 +5925,9 @@ tracking before being identified as an object:</string>
              <pointsize>10</pointsize>
              <bold>false</bold>
             </font>
+           </property>
+           <property name="text">
+            <string>110</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -5952,6 +5976,9 @@ tracking before being identified as an object:</string>
              <pointsize>10</pointsize>
              <bold>false</bold>
             </font>
+           </property>
+           <property name="text">
+            <string>20</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -6056,6 +6083,9 @@ tracking before being identified as an object:</string>
              <pointsize>10</pointsize>
              <bold>false</bold>
             </font>
+           </property>
+           <property name="text">
+            <string>-3.5</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -6239,10 +6269,10 @@ tracking before being identified as an object:</string>
           <x>60</x>
           <y>10</y>
           <width>361</width>
-          <height>426</height>
+          <height>371</height>
          </rect>
         </property>
-        <layout class="QGridLayout" name="gridLayout_20">
+        <layout class="QGridLayout" name="gridLayout_20" rowstretch="1,1,1,1,1,1,1,1,1,1,1,1,1,0">
          <property name="bottomMargin">
           <number>0</number>
          </property>
@@ -6370,6 +6400,9 @@ tracking before being identified as an object:</string>
              <bold>false</bold>
             </font>
            </property>
+           <property name="text">
+            <string>60</string>
+           </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
@@ -6417,6 +6450,9 @@ tracking before being identified as an object:</string>
              <pointsize>10</pointsize>
              <bold>false</bold>
             </font>
+           </property>
+           <property name="text">
+            <string>120</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -6541,6 +6577,9 @@ tracking before being identified as an object:</string>
              <pointsize>10</pointsize>
              <bold>false</bold>
             </font>
+           </property>
+           <property name="text">
+            <string>3</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -6986,8 +7025,8 @@ tracking before being identified as an object:</string>
        <widget class="QPushButton" name="calculate_sensor">
         <property name="geometry">
          <rect>
-          <x>260</x>
-          <y>500</y>
+          <x>270</x>
+          <y>490</y>
           <width>81</width>
           <height>32</height>
          </rect>
@@ -7161,7 +7200,7 @@ tracking before being identified as an object:</string>
         <property name="geometry">
          <rect>
           <x>60</x>
-          <y>440</y>
+          <y>410</y>
           <width>361</width>
           <height>51</height>
          </rect>
@@ -7339,6 +7378,9 @@ Reduction
              <bold>false</bold>
             </font>
            </property>
+           <property name="text">
+            <string>500</string>
+           </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
@@ -7424,6 +7466,9 @@ Reduction
              <pointsize>10</pointsize>
              <bold>false</bold>
             </font>
+           </property>
+           <property name="text">
+            <string>200</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -7587,6 +7632,9 @@ Reduction
              <bold>false</bold>
             </font>
            </property>
+           <property name="text">
+            <string>1100</string>
+           </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
@@ -7626,6 +7674,9 @@ Reduction
              <pointsize>10</pointsize>
              <bold>false</bold>
             </font>
+           </property>
+           <property name="text">
+            <string>400</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -7714,6 +7765,9 @@ Reduction
              <bold>false</bold>
             </font>
            </property>
+           <property name="text">
+            <string>200</string>
+           </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
@@ -7789,6 +7843,9 @@ Reduction
              <bold>false</bold>
             </font>
            </property>
+           <property name="text">
+            <string>36</string>
+           </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
@@ -7863,6 +7920,9 @@ Reduction
              <bold>false</bold>
             </font>
            </property>
+           <property name="text">
+            <string>500</string>
+           </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
@@ -7927,12 +7987,12 @@ Reduction
            </property>
            <item>
             <property name="text">
-             <string>m/s</string>
+             <string>kph</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>kph</string>
+             <string>m/s</string>
             </property>
            </item>
           </widget>
@@ -9018,6 +9078,9 @@ Reduction
            <bold>false</bold>
           </font>
          </property>
+         <property name="text">
+          <string>1</string>
+         </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
          </property>
@@ -9119,6 +9182,9 @@ Reduction
            <pointsize>10</pointsize>
            <bold>false</bold>
           </font>
+         </property>
+         <property name="text">
+          <string>50</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -9297,6 +9363,9 @@ Reduction
            <pointsize>10</pointsize>
            <bold>false</bold>
           </font>
+         </property>
+         <property name="text">
+          <string>2</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -9571,6 +9640,9 @@ Reduction
              <bold>false</bold>
             </font>
            </property>
+           <property name="text">
+            <string>36</string>
+           </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
@@ -9590,6 +9662,9 @@ Reduction
              <pointsize>12</pointsize>
              <bold>false</bold>
             </font>
+           </property>
+           <property name="text">
+            <string>77</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -9638,6 +9713,9 @@ Reduction
              <pointsize>12</pointsize>
              <bold>false</bold>
             </font>
+           </property>
+           <property name="text">
+            <string>40</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -9729,12 +9807,12 @@ Reduction
            </property>
            <item>
             <property name="text">
-             <string>m/s</string>
+             <string>kph</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>kph</string>
+             <string>m/s</string>
             </property>
            </item>
           </widget>
@@ -9750,12 +9828,12 @@ Reduction
            </property>
            <item>
             <property name="text">
-             <string>m/s</string>
+             <string>kph</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>kph</string>
+             <string>m/s</string>
             </property>
            </item>
           </widget>
@@ -9891,6 +9969,9 @@ Reduction
              <bold>false</bold>
             </font>
            </property>
+           <property name="text">
+            <string>77</string>
+           </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
@@ -9910,6 +9991,9 @@ Reduction
              <pointsize>12</pointsize>
              <bold>false</bold>
             </font>
+           </property>
+           <property name="text">
+            <string>0.1</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -10235,12 +10319,12 @@ Reduction
            </property>
            <item>
             <property name="text">
-             <string>m/s</string>
+             <string>kph</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>kph</string>
+             <string>m/s</string>
             </property>
            </item>
           </widget>
@@ -10253,6 +10337,9 @@ Reduction
              <pointsize>12</pointsize>
              <bold>false</bold>
             </font>
+           </property>
+           <property name="text">
+            <string>36</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -10288,6 +10375,9 @@ Reduction
              <bold>false</bold>
             </font>
            </property>
+           <property name="text">
+            <string>36</string>
+           </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
@@ -10322,6 +10412,9 @@ Reduction
              <bold>false</bold>
             </font>
            </property>
+           <property name="text">
+            <string>1</string>
+           </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
@@ -10341,6 +10434,9 @@ Reduction
              <pointsize>12</pointsize>
              <bold>false</bold>
             </font>
+           </property>
+           <property name="text">
+            <string>1</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -10392,12 +10488,12 @@ Reduction
            </property>
            <item>
             <property name="text">
-             <string>m/s</string>
+             <string>kph</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>kph</string>
+             <string>m/s</string>
             </property>
            </item>
           </widget>
@@ -10951,6 +11047,9 @@ Reduction
              <bold>false</bold>
             </font>
            </property>
+           <property name="text">
+            <string>10</string>
+           </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
@@ -11045,6 +11144,9 @@ Reduction
              <pointsize>12</pointsize>
              <bold>false</bold>
             </font>
+           </property>
+           <property name="text">
+            <string>76.5</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

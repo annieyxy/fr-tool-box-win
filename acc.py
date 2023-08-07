@@ -201,6 +201,7 @@ def sensor_range(self):
                     d_safe=mintg*vt+minrange
                     # D_safe = SftyGap_min * Targetspeed(k)/3.6 + SftyD_min;
                     d_tardriven=vt*(tsensor+talgo+tcomm+tactu+t_delay+t_delta)
+                    print(f"({i},{j}):vh={vh},vt={vt}, {d_processing+d_actuator+d_braking1+d_braking2+d_safe-d_tardriven}")
                     # D_tardriven = Targetspeed(k)/3.6 * (T_Sensor + T_Algo + T_Com + T_Actuator + T_delay + T_Delta);
                     table1[i][j]=d_processing+d_actuator+d_braking1+d_braking2+d_safe-d_tardriven
                     # table1(index) = D_processing + D_actuator + D_braking1 + D_braking2 + D_safe - D_tardriven;
@@ -251,11 +252,11 @@ def sensor_range(self):
         font.setPointSize(10)
         for row in range(5):
             for col in range(5):
-                item1 = QStandardItem(str(round(table1[row][col],3)))
+                item1 = QStandardItem(str(round(table1[col][row],3)))
                 item1.setFont(font)
                 item1.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
                 model1.setItem(row, col, item1)
-                item2 = QStandardItem(str(round(table2[row][col],3)))
+                item2 = QStandardItem(str(round(table2[col][row],3)))
                 item2.setFont(font)
                 item2.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
                 model2.setItem(row, col, item2)

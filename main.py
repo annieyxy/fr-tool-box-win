@@ -46,7 +46,7 @@ class Window(QMainWindow, Ui_tool_box_interface):
         # -------------------------------------------------------------------------------------------------------------#
         # Unit Conversion slot
         self.comboBox_age.currentTextChanged.connect(lambda:age_unitconv(self))
-        self.lineEdit_age.editingFinished.connect(lambda:age_unitconv(self))
+        self.lineEdit_age.textChanged.connect(lambda:age_unitconv(self))
         self.comboBox_speed.currentTextChanged.connect(lambda:speed_unitconv(self))
         self.lineEdit_speed.editingFinished.connect(lambda:speed_unitconv(self))
         self.comboBox_angleunit.currentTextChanged.connect(lambda:angle_unitconv(self))
