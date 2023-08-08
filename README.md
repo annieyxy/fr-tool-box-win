@@ -73,7 +73,7 @@ As of Aug.7 2023, This toolbox consists of seven major tabs: "UnitConv", "BasicM
 
 * Curve: get curvature, radius and latitudinal distance from velocity, yawrate and longitudinal distance
 
-* Example: <img title="" src="appView/curve.png" alt="">
+* Example: <img title="" src="appView/curve.PNG" alt="">
 
 ### BasicMotion
 
@@ -87,7 +87,7 @@ As of Aug.7 2023, This toolbox consists of seven major tabs: "UnitConv", "BasicM
 
 * Lane Maneuver: calculate $S_{critical}$ and $V_{s_{min}}$ from $V_{rear}$, $V_{ACSF}$, $a$, $t_B$ and $t_G$
 
-* Example: <img title="" src="appView/ttc.png" alt="">
+* Example: <img title="" src="appView/ttc.PNG" alt="">
 
 ### ACC
 
@@ -137,4 +137,4 @@ As of Aug.7 2023, This toolbox consists of seven major tabs: "UnitConv", "BasicM
 
 * Radar Equation: calculate distance to target from user entered $P_r$, $P_t$, $G_r$, $G_t$, $r$ and $f$.
 
-* Example: <img title="" src="appView/doppler.png" alt="">
+* Example: <img title="" src="appView/doppler.PNG" alt="">
