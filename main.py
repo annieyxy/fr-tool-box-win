@@ -27,7 +27,6 @@ def resource_path(relative_path):
     base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
     return os.path.join(base_path, relative_path)
 
-# parent class shall include QManWindow (which is used in QT designer) and Ui_MainWindow_RDT (class in UI.py)
 class Window(QMainWindow, Ui_tool_box_interface):
 
     def __init__(self):
@@ -282,8 +281,6 @@ class Window(QMainWindow, Ui_tool_box_interface):
         self.label_169.setPixmap(QPixmap(label_169_dir))
         label_212_dir=resource_path("image/Radar Equation.png")
         self.label_212.setPixmap(QPixmap(label_212_dir))
-
-
 
 
 if __name__ == '__main__':

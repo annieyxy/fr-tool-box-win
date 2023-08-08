@@ -43,7 +43,7 @@
      <locale language="English" country="UnitedStates"/>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab_unitconv">
      <property name="font">
@@ -3159,7 +3159,7 @@
        </font>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <property name="iconSize">
        <size>
@@ -5052,7 +5052,7 @@ Host starts out at a distance behind target.</string>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_15">
        <attribute name="title">
@@ -11484,7 +11484,7 @@ Reduction
      <x>0</x>
      <y>0</y>
      <width>1100</width>
-     <height>25</height>
+     <height>24</height>
     </rect>
    </property>
   </widget>
