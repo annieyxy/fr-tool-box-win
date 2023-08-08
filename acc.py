@@ -97,7 +97,7 @@ def acc_detect(self):
         s2t=[tdist] #target move distance
         ht_dist=[tdist] #host-targetDistance
         target_clearance=[v2*headway] #target clearance
-        print(count)
+        # print(count)
         for i in range(1,count):
             '''print("count:" +str(i))
             print("time:" +str(timeline[-1]))
@@ -201,7 +201,7 @@ def sensor_range(self):
                     d_safe=mintg*vt+minrange
                     # D_safe = SftyGap_min * Targetspeed(k)/3.6 + SftyD_min;
                     d_tardriven=vt*(tsensor+talgo+tcomm+tactu+t_delay+t_delta)
-                    print(f"({i},{j}):vh={vh},vt={vt}, {d_processing+d_actuator+d_braking1+d_braking2+d_safe-d_tardriven}")
+                    # print(f"({i},{j}):vh={vh},vt={vt}, {d_processing+d_actuator+d_braking1+d_braking2+d_safe-d_tardriven}")
                     # D_tardriven = Targetspeed(k)/3.6 * (T_Sensor + T_Algo + T_Com + T_Actuator + T_delay + T_Delta);
                     table1[i][j]=d_processing+d_actuator+d_braking1+d_braking2+d_safe-d_tardriven
                     # table1(index) = D_processing + D_actuator + D_braking1 + D_braking2 + D_safe - D_tardriven;

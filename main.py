@@ -34,19 +34,11 @@ class Window(QMainWindow, Ui_tool_box_interface):
         super().__init__() 
         self.setupUi(self)  
         setupGraph(self)
-        # -------------------------------------------------------------------------------------------------------------#
-        # Initiate own variables
-        self.detect_time=[]
-        self.detect_v1=[]
-        self.detect_decel=[]
-        self.detect_jerk=[]
-        self.detect_v2=[]
-        self.detect_dist=[]
-        self.detect_clearance=[]
+
         # -------------------------------------------------------------------------------------------------------------#
         # Unit Conversion slot
         self.comboBox_age.currentTextChanged.connect(lambda:age_unitconv(self))
-        self.lineEdit_age.textChanged.connect(lambda:age_unitconv(self))
+        self.lineEdit_age.editingFinished.connect(lambda:age_unitconv(self))
         self.comboBox_speed.currentTextChanged.connect(lambda:speed_unitconv(self))
         self.lineEdit_speed.editingFinished.connect(lambda:speed_unitconv(self))
         self.comboBox_angleunit.currentTextChanged.connect(lambda:angle_unitconv(self))
@@ -221,15 +213,55 @@ class Window(QMainWindow, Ui_tool_box_interface):
         self.comboBox_radareq_pr.currentTextChanged.connect(lambda:radareq(self))
         self.comboBox_radareq_pt.currentTextChanged.connect(lambda:radareq(self))
 
-
-
+        # -------------------------------------------------------------------------------------------------------------#
+        # initialize class variables
         self.ttc_timerList=[]
         self.ttc_speedList_host=[]
         self.ttc_distList_host=[]
         self.ttc_speedList_target=[]
         self.ttc_distList_target=[]
+        self.detect_time=[]
+        self.detect_time=[]
+        self.detect_v1=[]
+        self.detect_decel=[]
+        self.detect_jerk=[]
+        self.detect_v2=[]
+        self.detect_dist=[]
+        self.detect_clearance=[]
+        self.lat_pre=[]
+        self.ramp_pre=[]
+        self.dec_pre=[]
+        self.dur_pre=[]
+        self.lat_part=[]
+        self.ramp_part=[]
+        self.dec_part=[]
+        self.dur_part=[]
+        self.lat_full=[]
+        self.ramp_full=[]
+        self.dec_full=[]
+        self.dur_full=[]
+        self.aeb_timeline=[]
+        self.aeb_decel_req=[]
+        self.aeb_decel_actual=[]
+        self.aeb_v=[]
+        self.aeb_dist=[]
+        self.esa_timeline=[]
+        self.esa_yaw=[]
+        self.esa_yaw_rate=[]
+        self.esa_lat_offset=[]
+        self.esa_lat_accel=[]
+        self.plot_detect_v1=None
+        self.plot_detect_v2=None
+        self.plot_detect_dist=None
+        self.plot_detect_decel=None
+        self.plot_detect_jerk=None
+        self.plot_esa_yaw=None
+        self.plot_esa_yaw_rate=None
+        self.plot_esa_lat_offset=None
+        self.plot_esa_lat_accel=None
 
-        #---------- Set up image directories for pyinstaller-----------------
+        # -------------------------------------------------------------------------------------------------------------#
+        # set up image directories for pyinstaller deployment
         arc_img_dir=resource_path("image/Arc.png")
         self.arc_image.setPixmap(QPixmap(arc_img_dir))
         tri_img_dir=resource_path("image/Triangle.png")

@@ -55,7 +55,6 @@ def angle_unitconv(self):
     item2 = self.comboBox_trigonometry.currentText()
     temp = self.lineEdit_angle.text()
     if isnum(temp):
-        print('go to true')
         angle_input = float(temp)
         if item == "Degree":
             angle_result = angle_input * d2r
@@ -86,7 +85,6 @@ def angle_unitconv(self):
                 trig_result = np.tan(angle_input)
                 self.label_angletrigresult.setText(str(round(trig_result, 3)))
     else:
-        print('go to display invalid')
         self.label_angleunitresult.setText('Invalid input')
         self.label_angletrigresult.setText('Invalid input')
 
@@ -190,11 +188,7 @@ def freq_unitconv(self):
 def power_unitconv(self):
     item = self.comboBox_power.currentText()
     temp = self.lineEdit_powerinput.text()
-    print(item)
-    print(temp)
-    print(isnum(temp))
     if isnum(temp):
-        print('go to true')
         power_input = float(temp)
         if item == "dBm":
             self.label_powerdbm.setText(temp)

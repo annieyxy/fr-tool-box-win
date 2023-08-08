@@ -140,11 +140,16 @@ def update_plot_ttc(self):
 
 def update_plot_detect(self):
     self.plot_widget_detect.clear()
-    self.plot_detect_v1=self.plot_widget_detect.plot(self.detect_time,self.detect_v1,pen=pg.mkPen("red", width=2),name="Host Speed (m/s)")
-    self.plot_detect_v2=self.plot_widget_detect.plot(self.detect_time,self.detect_v2,pen=pg.mkPen("blue", width=2),name="Target Speed (m/s)")
-    self.plot_detect_decel=self.plot_widget_detect.plot(self.detect_time,self.detect_decel,pen=pg.mkPen("orange", width=2),name="Host Decel (m/s^2)")
-    self.plot_detect_jerk=self.plot_widget_detect.plot(self.detect_time,self.detect_jerk,pen=pg.mkPen("gray", width=2),name="Host Jerk (m/s^2)")
-    self.plot_detect_dist=self.plot_widget_detect.plot(self.detect_time,self.detect_dist,pen=pg.mkPen("green", width=2),name="Host-Target Distance (m)")
+    if self.checkBox_detect_v1.isChecked():
+        self.plot_detect_v1=self.plot_widget_detect.plot(self.detect_time,self.detect_v1,pen=pg.mkPen("red", width=2),name="Host Speed (m/s)")
+    if self.checkBox_detect_v2.isChecked():
+        self.plot_detect_v2=self.plot_widget_detect.plot(self.detect_time,self.detect_v2,pen=pg.mkPen("blue", width=2),name="Target Speed (m/s)")
+    if self.checkBox_detect_decel.isChecked():
+        self.plot_detect_decel=self.plot_widget_detect.plot(self.detect_time,self.detect_decel,pen=pg.mkPen("orange", width=2),name="Host Decel (m/s^2)")
+    if self.checkBox_detect_jerk.isChecked():
+        self.plot_detect_jerk=self.plot_widget_detect.plot(self.detect_time,self.detect_jerk,pen=pg.mkPen("gray", width=2),name="Host Jerk (m/s^2)")
+    if self.checkBox_detect_dist.isChecked():
+        self.plot_detect_dist=self.plot_widget_detect.plot(self.detect_time,self.detect_dist,pen=pg.mkPen("green", width=2),name="Host-Target Distance (m)")
 
 def update_plot_detect_v1(self,state):
     if state==2:
@@ -188,10 +193,14 @@ def update_plot_aeb(self):
     
 def update_plot_esa(self):
     self.plot_widget_esa.clear()
-    self.plot_esa_yaw=self.plot_widget_esa.plot(self.esa_timeline,self.esa_yaw,pen=pg.mkPen("blue",width=1.5),name="Yaw (deg)")
-    self.plot_esa_yaw_rate=self.plot_widget_esa.plot(self.esa_timeline,self.esa_yaw_rate,pen=pg.mkPen("grey",width=1.5),name="Yaw Rate (deg/s)")
-    self.plot_esa_lat_offset=self.plot_widget_esa.plot(self.esa_timeline,self.esa_lat_offset,pen=pg.mkPen("orange",width=1.5),name="Lateral Offset (m)")
-    self.plot_esa_lat_accel=self.plot_widget_esa.plot(self.esa_timeline,self.esa_lat_accel,pen=pg.mkPen("green",width=1.5),name="Lateral Accel. (m/s^2)")
+    if self.checkBox_esa_yaw.isChecked():
+        self.plot_esa_yaw=self.plot_widget_esa.plot(self.esa_timeline,self.esa_yaw,pen=pg.mkPen("blue",width=1.5),name="Yaw (deg)")
+    if self.checkBox_esa_yaw_rate.isChecked():
+        self.plot_esa_yaw_rate=self.plot_widget_esa.plot(self.esa_timeline,self.esa_yaw_rate,pen=pg.mkPen("grey",width=1.5),name="Yaw Rate (deg/s)")
+    if self.checkBox_esa_lat_offset.isChecked():
+        self.plot_esa_lat_offset=self.plot_widget_esa.plot(self.esa_timeline,self.esa_lat_offset,pen=pg.mkPen("orange",width=1.5),name="Lateral Offset (m)")
+    if self.checkBox_esa_lat_accel.isChecked():
+        self.plot_esa_lat_accel=self.plot_widget_esa.plot(self.esa_timeline,self.esa_lat_accel,pen=pg.mkPen("green",width=1.5),name="Lateral Accel. (m/s^2)")
 
 def update_plot_esa_yaw(self,state):
     if state==2:
