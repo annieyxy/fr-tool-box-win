@@ -59,7 +59,7 @@ As of Aug.7 2023, This toolbox consists of seven major tabs: "UnitConv", "BasicM
 
 * Power: dBm, mW, W
 
-* Example: <img title="" src="appView/freq.png" alt="">
+* Example: ![Example](appView/freq.png)
 
 ### BasicMath
 
@@ -73,7 +73,7 @@ As of Aug.7 2023, This toolbox consists of seven major tabs: "UnitConv", "BasicM
 
 * Curve: get curvature, radius and latitudinal distance from velocity, yawrate and longitudinal distance
 
-* Example: <img title="" src="appView/curve.PNG" alt="">
+* Example: ![Example](appView/curve.png)
 
 ### BasicMotion
 
@@ -87,7 +87,7 @@ As of Aug.7 2023, This toolbox consists of seven major tabs: "UnitConv", "BasicM
 
 * Lane Maneuver: calculate $S_{critical}$ and $V_{s_{min}}$ from $V_{rear}$, $V_{ACSF}$, $a$, $t_B$ and $t_G$
 
-* Example: <img title="" src="appView/ttc.PNG" alt="">
+* Example: ![Example](appView/ttc.png)
 
 ### ACC
 
@@ -101,7 +101,7 @@ As of Aug.7 2023, This toolbox consists of seven major tabs: "UnitConv", "BasicM
 
 * Sensor Range: generate table of results that show required sensor range to keep safety distance in two scenarios, without driver intervention and with driver handover, for a range of host and target speed
 
-* Example: <img title="" src="appView/range.png" alt="">
+* Example: ![Example](appView/range.png)
   
   
 
@@ -115,13 +115,13 @@ As of Aug.7 2023, This toolbox consists of seven major tabs: "UnitConv", "BasicM
 
 * Based on the data obtained to this point, plot diagrams of AEB deceleration, speed and distance are generated.
 
-* Example: <img title="" src="appView/step1.png" alt="">
+* Example: ![Example](appView/step1.png)
 
 ### ESA
 
 "ESA" is for calculating and plotting lateral offset distance and lateral acceleration of maximum and minimum required TTC from yaw slew rate, max yawrate and vehicle speed provided.
 
-* Example: <img title="" src="appView/ESA.png" alt="">
+* Example: ![Example](appView/ESA.png)
 
 ### Radar
 
@@ -137,4 +137,4 @@ As of Aug.7 2023, This toolbox consists of seven major tabs: "UnitConv", "BasicM
 
 * Radar Equation: calculate distance to target from user entered $P_r$, $P_t$, $G_r$, $G_t$, $r$ and $f$.
 
-* Example: <img title="" src="appView/doppler.PNG" alt="">
+* Example: ![Example](appView/doppler.png)
