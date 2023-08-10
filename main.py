@@ -33,7 +33,6 @@ class Window(QMainWindow, Ui_tool_box_interface):
         super().__init__() 
         self.setupUi(self)  
         setupGraph(self)
-
         # -------------------------------------------------------------------------------------------------------------#
         # Unit Conversion slot
         self.comboBox_age.currentTextChanged.connect(lambda:age_unitconv(self))

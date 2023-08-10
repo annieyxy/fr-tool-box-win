@@ -5,13 +5,17 @@ from PyQt6.QtWidgets import QVBoxLayout
 import pyqtgraph as pg
 from PyQt6.QtGui import QIcon, QFont
 
-def onMouseMoved(plot_widget, event):
+def onMouseMoved(plot_widget, event, crosshair_v, crosshair_h):
     pos = event
     if plot_widget.sceneBoundingRect().contains(pos):
         mouse_point = plot_widget.plotItem.vb.mapSceneToView(pos)
         plot_widget.window().statusBar().showMessage(f"Mouse Position: x={round(mouse_point.x(), 4)}, y={round(mouse_point.y(), 4)}")
+        crosshair_v.setPos(mouse_point.x())
+        crosshair_h.setPos(mouse_point.y())
 
 def setupGraph(self):
+    self.crosshair_v = pg.InfiniteLine(angle=90, movable=False)
+    self.crosshair_h = pg.InfiniteLine(angle=0, movable=False)
     #-----------------Set up linear accel. graph-------------------
     layout1=QVBoxLayout()
     self.graphicsView_lin.setLayout(layout1)
@@ -20,7 +24,7 @@ def setupGraph(self):
     self.plot_widget_lin.setBackground('w')
     self.plot_widget_lin.addLegend()
     self.plot_widget_lin.getPlotItem().showAxes(True)
-    self.plot_widget_lin.scene().sigMouseMoved.connect(lambda event: onMouseMoved(self.plot_widget_lin, event))
+    self.plot_widget_lin.scene().sigMouseMoved.connect(lambda event: onMouseMoved(self.plot_widget_lin, event, self.crosshair_v, self.crosshair_h))
     #-----------------Set up ttc graph-----------------------------
     #font=QFont()
     #font.setPixelSize(10)
@@ -35,7 +39,7 @@ def setupGraph(self):
     self.plot_widget_ttc_v.setLabel("left", "Velocity (m/s)")
     #self.plot_widget_ttc_v.getAxis("bottom").setTickFont(font)
     #self.plot_widget_ttc_v.getAxis("left").setTickFont(font)
-    self.plot_widget_ttc_v.scene().sigMouseMoved.connect(lambda event: onMouseMoved(self.plot_widget_ttc_v, event))
+    self.plot_widget_ttc_v.scene().sigMouseMoved.connect(lambda event: onMouseMoved(self.plot_widget_ttc_v, event, self.crosshair_v, self.crosshair_h))
     layout3=QVBoxLayout()
     self.graphicsView_ttc_s.setLayout(layout3)
     self.plot_widget_ttc_s=pg.PlotWidget()
@@ -45,7 +49,7 @@ def setupGraph(self):
     self.plot_widget_ttc_s.getPlotItem().showAxes(True)
     self.plot_widget_ttc_s.setLabel("bottom", "Time (s)")
     self.plot_widget_ttc_s.setLabel("left", "Distance (m)")
-    self.plot_widget_ttc_s.scene().sigMouseMoved.connect(lambda event: onMouseMoved(self.plot_widget_ttc_s, event))
+    self.plot_widget_ttc_s.scene().sigMouseMoved.connect(lambda event: onMouseMoved(self.plot_widget_ttc_s, event, self.crosshair_v, self.crosshair_h))
     #----------------Set up detect & follow dist graph-------------
     layout4=QVBoxLayout()
     self.graphicsView_detect.setLayout(layout4)
@@ -55,7 +59,7 @@ def setupGraph(self):
     self.plot_widget_detect.addLegend()
     self.plot_widget_detect.getPlotItem().showAxes(True)
     self.plot_widget_detect.setLabel("bottom", "Time (s)")
-    self.plot_widget_detect.scene().sigMouseMoved.connect(lambda event: onMouseMoved(self.plot_widget_detect, event))
+    self.plot_widget_detect.scene().sigMouseMoved.connect(lambda event: onMouseMoved(self.plot_widget_detect, event, self.crosshair_v, self.crosshair_h))
     #----------------Set up AEB decel graph-------------
     layout5=QVBoxLayout()
     self.graphicsView_aeb_dec.setLayout(layout5)
@@ -66,7 +70,7 @@ def setupGraph(self):
     self.plot_widget_aeb_dec.getPlotItem().showAxes(True)
     self.plot_widget_aeb_dec.setLabel("bottom", "Time (ms)")
     self.plot_widget_aeb_dec.setLabel("left", "Deceleration (m/s^2)")
-    self.plot_widget_aeb_dec.scene().sigMouseMoved.connect(lambda event: onMouseMoved(self.plot_widget_aeb_dec, event))
+    self.plot_widget_aeb_dec.scene().sigMouseMoved.connect(lambda event: onMouseMoved(self.plot_widget_aeb_dec, event, self.crosshair_v, self.crosshair_h))
     #----------------Set up AEB speed graph-------------
     layout6=QVBoxLayout()
     self.graphicsView_aeb_v.setLayout(layout6)
@@ -77,7 +81,7 @@ def setupGraph(self):
     self.plot_widget_aeb_v.getPlotItem().showAxes(True)
     self.plot_widget_aeb_v.setLabel("bottom", "Time (ms)")
     self.plot_widget_aeb_v.setLabel("left", "Speed (m/s)")
-    self.plot_widget_aeb_v.scene().sigMouseMoved.connect(lambda event: onMouseMoved(self.plot_widget_aeb_v, event))
+    self.plot_widget_aeb_v.scene().sigMouseMoved.connect(lambda event: onMouseMoved(self.plot_widget_aeb_v, event, self.crosshair_v, self.crosshair_h))
     #----------------Set up AEB dist graph-------------
     layout7=QVBoxLayout()
     self.graphicsView_aeb_dist.setLayout(layout7)
@@ -88,7 +92,7 @@ def setupGraph(self):
     self.plot_widget_aeb_dist.getPlotItem().showAxes(True)
     self.plot_widget_aeb_dist.setLabel("bottom", "Time (ms)")
     self.plot_widget_aeb_dist.setLabel("left", "Distance (m)")
-    self.plot_widget_aeb_dist.scene().sigMouseMoved.connect(lambda event: onMouseMoved(self.plot_widget_aeb_dist, event))
+    self.plot_widget_aeb_dist.scene().sigMouseMoved.connect(lambda event: onMouseMoved(self.plot_widget_aeb_dist, event, self.crosshair_v, self.crosshair_h))
     #----------------Set up ESA graph-------------
     layout8=QVBoxLayout()
     self.graphicsView_esa.setLayout(layout8)
@@ -98,7 +102,7 @@ def setupGraph(self):
     self.plot_widget_esa.addLegend()
     self.plot_widget_esa.getPlotItem().showAxes(True)
     self.plot_widget_esa.setLabel("bottom", "Time (s)")
-    self.plot_widget_esa.scene().sigMouseMoved.connect(lambda event: onMouseMoved(self.plot_widget_esa, event))
+    self.plot_widget_esa.scene().sigMouseMoved.connect(lambda event: onMouseMoved(self.plot_widget_esa, event, self.crosshair_v, self.crosshair_h))
 
 
 def update_plot_lin(self,a):
@@ -132,6 +136,8 @@ def update_plot_lin(self,a):
         if (self.comboBox_lin_v1=="kph"):
             v1=v1*3.6
         self.plot_widget_lin.clear()
+        self.plot_widget_lin.addItem(self.crosshair_v, ignoreBounds=True)
+        self.plot_widget_lin.addItem(self.crosshair_h, ignoreBounds=True)
         t_lins=np.linspace(0,dt,100)
         v_lins=np.linspace(v0,v1,100)
         s_lins=[v0*ti+0.5*a*(ti**2) for ti in t_lins]
@@ -238,3 +244,4 @@ def update_plot_esa_lat_accel(self,state):
         self.plot_esa_lat_accel=self.plot_widget_esa.plot(self.esa_timeline,self.esa_lat_accel,pen=pg.mkPen("green",width=1.5),name="Lateral Accel. (m/s^2)")
     else:
         self.plot_widget_esa.removeItem(self.plot_esa_lat_accel)
+
